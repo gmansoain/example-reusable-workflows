@@ -1,0 +1,17 @@
+name: Reusable Workflow with Parameters
+
+on:
+  workflow_dispatch:
+
+parameters:
+  gon_param_1:
+    description: 'Gon parameter to customize'
+    default: 'default value for Gon'
+
+jobs:
+  job1:
+  runs-on: ubuntu-latest
+  steps:
+  - name: Print parameter
+    run: |
+      echo "Gon Parameter value:  ${{ parameters.gon_param_1 }}"
