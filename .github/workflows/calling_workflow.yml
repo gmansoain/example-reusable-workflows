@@ -5,6 +5,6 @@ on:
 
 jobs:
   use_template:
-    uses: .github/workflows/template.yml
+    uses: example-reusable-workflows/.github/workflows/template.yml
     with:
       gon_param_1: 'Hola hola'
