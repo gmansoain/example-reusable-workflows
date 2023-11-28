@@ -2,11 +2,10 @@ name: Reusable Workflow with Parameters
 
 on:
   workflow_call:
-
-parameters:
-  gon_param_1:
-    description: 'Gon parameter to customize'
-    default: 'default value for Gon'
+    inputs:
+      gon_param_1:
+        required: true
+        type: string
 
 jobs:
   job1:
