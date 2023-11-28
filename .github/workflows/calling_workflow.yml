@@ -5,5 +5,5 @@ on:
 
 jobs:
   use_template:
-    uses: ./.github/workflows/template.yml
+    uses: gmansoain/example-reusable-workflows/.github/workflows/template.yml@main
    
