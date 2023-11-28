@@ -1,7 +1,7 @@
 name: Reusable Workflow with Parameters
 
 on:
-  workflow_dispatch:
+  workflow_call:
 
 parameters:
   gon_param_1:
