@@ -1,0 +1,10 @@
+name: Calling Workflow
+
+on:
+  workflow_dispatch:
+
+jobs:
+  use_template:
+    uses: .github/workflows/template.yml
+    with:
+      gon_param_1: "Hola hola"
