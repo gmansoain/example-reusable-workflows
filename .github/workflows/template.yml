@@ -3,16 +3,16 @@ name: Reusable Workflow with Parameters
 on:
   workflow_call:
 
-# parameters:
-#  gon_param_1:
-#    description: 'Gon parameter to customize'
-#    default: 'default value for Gon'
+parameters:
+  gon_param_1:
+    description: 'Gon parameter to customize'
+    default: 'default value for Gon'
 
 jobs:
   job1:
     runs-on: ubuntu-latest
     steps:
     - name: Print parameter
-      run: echo 'Gon without parameters'
+      run: echo ;'Gon Parameter value:  ${{ parameters.gon_param_1 }}'
 
- #       echo "Gon Parameter value:  ${{ parameters.gon_param_1 }}"
+ 
