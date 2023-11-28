@@ -2,6 +2,11 @@ name: Reusable Workflow with Parameters
 
 on:
   workflow_call:
+    inputs:
+      gon_param_1:
+        required: false
+        type: string
+
     
 jobs:
   job1:
