@@ -15,4 +15,4 @@ jobs:
     - name: Print parameter
       run: |
  #       echo "Gon Parameter value:  ${{ parameters.gon_param_1 }}"
-        echo "Gon without parameters"
+        echo 'Gon without parameters'
