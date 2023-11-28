@@ -13,6 +13,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: Print parameter
-      run: echo 'Gon Parameter value:'
+      run: echo 'Gon Parameter value: ${{ inputs.gon_param_1' }}
 
  
