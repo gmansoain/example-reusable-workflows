@@ -6,4 +6,6 @@ on:
 jobs:
   use_template:
     uses: gmansoain/example-reusable-workflows/.github/workflows/template.yml@main
+      with:
+        gon-param-1: Adios
    
