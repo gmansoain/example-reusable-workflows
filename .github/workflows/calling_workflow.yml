@@ -5,7 +5,7 @@ on:
 
 jobs:
   use_template:
-    uses: ./.github/workflows/template.yml@main
+    uses: gmansoain/example-reusable-workflows/.github/workflows/template.yml@main
     with:
       gon_param_1: Adios
    
