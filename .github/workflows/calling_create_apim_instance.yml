@@ -14,3 +14,4 @@ jobs:
       MULE_USERNAME: ${{ secrets.MULE_USERNAME }}       
       MULE_PASSWORD : ${{ secrets.MULE_PASSWORD }}
       MULE_ORG_ID: ${{ secrets.MULE_ORG_ID}}
+      GON_GITHUB_TOKEN: ${{ secrets.GON_GITHUB_TOKEN }}
