@@ -15,16 +15,13 @@ on:
       ENVIRONMENT:
         type: string
         required: true
+    secrets:
       MULE_ORG_ID:
-        type: string
         required: true      
       MULE_USERNAME:
-        type: string
         required: true
       MULE_PASSWORD:
-        type: string
         required: true
-
 
 jobs:
   create_apim_instance:
