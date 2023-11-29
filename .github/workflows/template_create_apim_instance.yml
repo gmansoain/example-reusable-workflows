@@ -62,5 +62,6 @@ jobs:
       env:
         ENVIRONMENT: ${{ inputs.ENVIRONMENT }}
         GITHUB_TOKEN: ${{ secrets.GON_GITHUB_TOKEN }}
+        VALUE: 1111
       run: |
-        gh variable set API_ID --env $ENVIRONMENT --body "$(cat ./api_id.txt)"
+        gh variable set API_ID --env $ENVIRONMENT --body $VALUE
