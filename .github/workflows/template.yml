@@ -6,6 +6,7 @@ on:
       gon_param_1:
         required: false
         type: string
+        default: Hola hola
 
 jobs:
   job1:
