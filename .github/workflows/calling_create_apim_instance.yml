@@ -8,8 +8,8 @@ jobs:
     with:
       ASSET_ID: slack-system-id
       ASSET_VERSION: 1.0.1
-      MULE_USERNAME: ${{ secrets.MULE_USERNAME }}
-      MULE_PASSWORD: ${{ secrets.MULE_PASSWORD }}
-      MULE_ORG_ID: ${{ secrets.MULE_ORG_ID }}
+      MULE_USERNAME: gonmule
+      MULE_PASSWORD: Scipio235ac!
+      MULE_ORG_ID: 37aa8fe0-4188-44c1-a9b5-bdce3ca12f0b
       MULE_BG_ID: fc9e3283-a489-4e88-99aa-cceea4aa5ea1
       ENVIRONMENT: Development
