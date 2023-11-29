@@ -15,6 +15,13 @@ on:
       ENVIRONMENT:
         type: string
         required: true
+    outputs:
+      MULE_ORG_ID:
+        value: ${{ secrets.MULE_ORG_ID }}
+      MULE_USERNAME:
+        value: ${{ secrets.MULE_USERNAME }}
+      MULE_PASSWORD:
+        value: ${{ secrets.MULE_PASSWORD }}
 
 
 jobs:
@@ -34,9 +41,9 @@ jobs:
         anypoint-cli-v4 --version
     - name: Set Authentication
       env:
-        MULE_USERNAME: ${{ secrets.MULE_USERNAME }}
-        MULE_PASSWORD: ${{ secrets.MULE_PASSWORD }}
-        MULE_ORG_ID: ${{ secrets.MULE_ORG_ID }}
+        MULE_USERNAME: ${{ outputs.MULE_USERNAME }}
+        MULE_PASSWORD: ${{ outputs.MULE_PASSWORD }}
+        MULE_ORG_ID: ${{ outputs.MULE_ORG_ID }}
       run: |
         anypoint-cli-v4 conf username $MULE_USERNAME
         anypoint-cli-v4 conf password $MULE_PASSWORD
