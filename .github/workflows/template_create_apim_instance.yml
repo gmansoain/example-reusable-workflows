@@ -12,8 +12,8 @@ on:
       ENVIRONMENT:
         type: string
         required: true
-    vars:
       MULE_BG_ID:
+        type: string
         required: true
     secrets:
       MULE_ORG_ID:
