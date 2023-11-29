@@ -40,9 +40,9 @@ jobs:
         anypoint-cli-v4 --version
     - name: Set Authentication
       env:
-        MULE_USERNAME: ${{ inputs.MULE_USERNAME }}
-        MULE_PASSWORD: ${{ inputs.MULE_PASSWORD }}
-        MULE_ORG_ID: ${{ inputs.MULE_ORG_ID }}
+        MULE_USERNAME: ${{ secrets.MULE_USERNAME }}
+        MULE_PASSWORD: ${{ secrets.MULE_PASSWORD }}
+        MULE_ORG_ID: ${{ secrets.MULE_ORG_ID }}
       run: |
         anypoint-cli-v4 conf username $MULE_USERNAME
         anypoint-cli-v4 conf password $MULE_PASSWORD
