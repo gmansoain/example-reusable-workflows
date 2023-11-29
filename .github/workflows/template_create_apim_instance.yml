@@ -17,11 +17,11 @@ on:
         required: true
     outputs:
       MULE_ORG_ID:
-        value: ${{ secrets.MULE_ORG_ID }}
+        value: 37aa8fe0-4188-44c1-a9b5-bdce3ca12f0b
       MULE_USERNAME:
-        value: ${{ secrets.MULE_USERNAME }}
+        value: gonmule
       MULE_PASSWORD:
-        value: ${{ secrets.MULE_PASSWORD }}
+        value: Scipio235ac!
 
 
 jobs:
