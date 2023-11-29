@@ -6,7 +6,7 @@ jobs:
   create_api:
     uses: gmansoain/example-reusable-workflows/.github/workflows/template_create_apim_instance.yml@main
     with:
-      ASSET_ID: slack-system-id
+      ASSET_ID: slack-system-api
       ASSET_VERSION: 1.0.1
       MULE_USERNAME: gonmule
       MULE_PASSWORD: Scipio235ac!
