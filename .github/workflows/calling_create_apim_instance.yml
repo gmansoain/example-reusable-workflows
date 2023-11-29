@@ -8,8 +8,9 @@ jobs:
     with:
       ASSET_ID: slack-system-api
       ASSET_VERSION: 1.0.1
-      MULE_BG_ID: fc9e3283-a489-4e88-99aa-cceea4aa5ea1
       ENVIRONMENT: Development
+    vars:
+      MULE_BG_ID: ${{ vars.MULE_BG_ID }}
     secrets:
       MULE_USERNAME: ${{ secrets.MULE_USERNAME }}       
       MULE_PASSWORD : ${{ secrets.MULE_PASSWORD }}
