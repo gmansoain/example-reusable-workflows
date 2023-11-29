@@ -9,11 +9,11 @@ on:
       ASSET_VERSION:
         type: string
         required: true
-      MULE_BG_ID:
-        type: string
-        required: true
       ENVIRONMENT:
         type: string
+        required: true
+    vars:
+      MULE_BG_ID:
         required: true
     secrets:
       MULE_ORG_ID:
@@ -51,7 +51,7 @@ jobs:
       env:
         ASSET_ID: ${{ inputs.ASSET_ID }}
         ASSET_VERSION: ${{ inputs.ASSET_VERSION }}
-        MULE_BG_ID: ${{ inputs.MULE_BG_ID }}
+        MULE_BG_ID: ${{ vars.MULE_BG_ID }}
         ENVIRONMENT: ${{ inputs.ENVIRONMENT }}
       run: |
           anypoint-cli-v4 api-mgr:api:manage -m --deploymentType=cloudhub --organization $MULE_BG_ID --environment $ENVIRONMENT $ASSET_ID $ASSET_VERSION | sed -e "s/Created new API with ID: //g" > ./api_id.txt
